@@ -35,4 +35,27 @@ window.onscroll = function () {
 
 
 
+let sections = document.querySelectorAll(".section")
+console.log(sections);
 
+window.addEventListener("scroll", checkSections)
+
+checkSections()
+
+function checkSections () {
+    let trigerBottom = window.innerHeight / 3 * 2;
+    // console.log(trigerBottom);
+    sections.forEach(section => {
+        let secTop = section.getBoundingClientRect().top
+
+        if(secTop < trigerBottom) {
+            console.log("show");
+            section.classList.add('show')
+        } else {
+            console.log("not show");
+
+            section.classList.remove('show')
+        }
+    })
+    
+}

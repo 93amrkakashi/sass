@@ -96,6 +96,23 @@ body {
   text-transform: uppercase;
 }
 
+.section {
+  transform: translateX(-2500px);
+  transition: all 0.9s;
+}
+
+.section:nth-of-type(even) {
+  transform: translateX(2500px);
+}
+
+.show:nth-of-type(even) {
+  transform: translateX(0);
+}
+
+.show {
+  transform: translateX(0);
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -427,7 +444,7 @@ body {
   top: 0;
   height: 100%;
   border-radius: 15px;
-  transition: width 0.5s linear;
+  transition: width 0.5s 0.7s linear;
 }
 .progress .html2 {
   background-color: #e54d26;
