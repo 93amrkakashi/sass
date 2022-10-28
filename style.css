@@ -115,7 +115,7 @@ body {
 }
 
 .card, .card1, .card2 {
-  margin: 25px;
+  margin: 15px;
 }
 
 .navigation {
@@ -340,7 +340,6 @@ body {
 
 .card {
   flex-wrap: wrap;
-  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -470,7 +469,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 35px;
 }
 
 .card1 {
@@ -668,7 +666,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
   flex-wrap: wrap;
 }
 
