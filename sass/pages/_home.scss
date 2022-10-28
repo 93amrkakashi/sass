@@ -5,8 +5,6 @@ $spicial: #2d67f7;
 $border: 1px solid rgba(184, 184, 184, 0.63);
 $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
-
-
 .hero {
   position: relative;
   display: flex;
@@ -17,56 +15,52 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   height: 100vh;
   padding: 0 25px;
   padding-top: 65px;
-}
-
-.hero::before {
-  content: "";
-  background-image: url(pics/last.png);
-  background-size: 530px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right bottom;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  &::before {
+    content: "";
+    background-image: url(pics/last.png);
+    background-size: 530px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .content {
   position: relative;
   width: 50%;
-  color:   $main-color;
+  color: $main-color;
   margin-bottom: 10px;
   animation-name: fromleft;
   animation-duration: 1.2s;
-}
-
-.content::after {
-  content: "";
-  height: 100%;
-  width: 2px;
-  position: absolute;
-  left: -14px;
-  top: 0;
-  background-color:   $main-color;
-}
-
-.content h1,
-.content h2 {
-  font-size: 35px;
-  letter-spacing: 1.5px;
-  text-transform: capitalize;
+  & h1,
+  & h2 {
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+  }
+  &::after {
+    content: "";
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    left: -14px;
+    top: 0;
+    background-color: $main-color;
+  }
 }
 
 .pic {
   height: 100%;
   width: 600px;
-}
-
-.pic img {
-  width: 100%;
-  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .btn {
@@ -81,33 +75,27 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   border: none;
   font-weight: 600;
   color: black;
-  background-color:   $main-color;
+  background-color: $main-color;
   cursor: pointer;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow:   $shadow;
-}
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.5s;
-}
-
-.btn::after {
-  background-color:   $main-color;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: $shadow;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+    background-color: $main-color;
+  }
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
 }

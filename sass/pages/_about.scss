@@ -5,33 +5,13 @@ $spicial: #2d67f7;
 $border: 1px solid rgba(184, 184, 184, 0.63);
 $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
-
 .about {
   min-height: 150vh;
+  .content-sec {
+    display: flex;
+    flex-direction: column;
+  }
 }
-
-.about .content-sec {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .top {
   min-height: 60vh;
@@ -46,21 +26,18 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: right center;
-}
-
-.top h2 {
-  color: $spicial  ;
-  letter-spacing: 1px;
-}
-
-.top p {
-  color: black;
-  font-weight: 600;
-}
-
-.top h4 span {
-  color: $spicial  ;
-  font-size: 23px;
+  h2 {
+    color: $spicial;
+    letter-spacing: 1px;
+  }
+  p {
+    color: black;
+    font-weight: 600;
+  }
+  h4 span {
+    color: $spicial;
+    font-size: 23px;
+  }
 }
 
 .social-work,
@@ -76,7 +53,7 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   position: absolute;
   width: 5px;
   height: calc(100% - 18px);
-  background-color: $spicial  ;
+  background-color: $spicial;
   left: -12px;
   top: 10px;
   z-index: 0;
@@ -98,20 +75,22 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid $main-color  ;
+  border: 1px solid $main-color;
   border-radius: 15px;
   width: 300px;
   height: 350px;
   box-shadow: 2px 2px 7px 0px #666464ab;
-  transition: $transition  ;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-.card i {
-  font-size: 50px;
+  transition: $transition;
+  &:hover {
+    transform: translateY(-10px);
+  }
+  i {
+    font-size: 50px;
+  }
+  p {
+    width: 95%;
+    text-align: center;
+  }
 }
 
 .html {
@@ -124,9 +103,4 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
 .js {
   color: #d9b82d;
-}
-
-.card p {
-  width: 95%;
-  text-align: center;
 }

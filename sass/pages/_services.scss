@@ -5,18 +5,16 @@ $spicial: #2d67f7;
 $border: 1px solid rgba(184, 184, 184, 0.63);
 $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
-
 .services {
   min-height: 100vh;
   width: 100%;
-}
-
-.services .cards {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  .cards {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .s-card {
@@ -28,27 +26,32 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border:   $border;
-  box-shadow:   $shadow;
+  border: $border;
+  box-shadow: $shadow;
   gap: 40px;
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  h2::before {
+    content: "➔";
+    position: absolute;
+    width: 5px;
+    height: calc(100% - 18px);
+    left: -28px;
+    top: 2px;
+    z-index: 0;
+  }
+  .pic {
+    width: 70%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
-
-.s-card .text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.s-card h2::before {
-  content: "➔";
-  position: absolute;
-  width: 5px;
-  height: calc(100% - 18px);
-  left: -28px;
-  top: 2px;
-  z-index: 0;
-}
-
 .s-card h4,
 .s-card p,
 .s-card h2 {
@@ -62,7 +65,7 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   position: absolute;
   width: 5px;
   height: 100%;
-  background-color:   $spicial;
+  background-color: $spicial;
   left: -12px;
   top: 0px;
   z-index: 0;
@@ -74,16 +77,6 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
 .fix img {
   width: 120%;
-}
-
-.s-card .pic {
-  width: 70%;
-  height: 100%;
-}
-
-.s-card .pic img {
-  width: 100%;
-  height: 100%;
 }
 
 .text {
@@ -101,17 +94,16 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 .rules {
   margin: auto;
   width: 95%;
-  border:   $border;
-  box-shadow:   $shadow;
+  border: $border;
+  box-shadow: $shadow;
   text-align: center;
   border-radius: 10px;
-  background-color:   $main-color;
+  background-color: $main-color;
   margin-top: 15px;
-}
-
-.rules h3 {
-  text-align: center;
-  text-transform: uppercase;
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .steps {
@@ -121,43 +113,38 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
   gap: 35px;
   padding: 35px;
-}
-
-.steps .web,
-.steps .pro,
-.steps .add,
-.steps .geniral {
-  border:   $border;
-  box-shadow:   $shadow;
-  border-radius: 10px;
-  background-color:   $main-color;
-  padding: 30px;
-}
-
-.steps div ul li {
-  position: relative;
-}
-
-.steps div ul li::before {
-  content: "➔";
-  position: absolute;
-  width: 5px;
-  height: calc(100% - 18px);
-  left: -20px;
-  top: 2px;
-  z-index: 0;
-}
-
-.steps .add,
-.steps .pro {
-  width: 45%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.steps .web,
-.steps .geniral {
-  width: 95%;
+  .web,
+  .pro,
+  .add,
+  .geniral {
+    border: $border;
+    box-shadow: $shadow;
+    border-radius: 10px;
+    background-color: $main-color;
+    padding: 30px;
+  }
+  div ul li {
+    position: relative;
+    &::before {
+      content: "➔";
+      position: absolute;
+      width: 5px;
+      height: calc(100% - 18px);
+      left: -20px;
+      top: 2px;
+      z-index: 0;
+    }
+  }
+  .add,
+  .pro {
+    width: 45%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .web,
+  .geniral {
+    width: 95%;
+  }
 }
