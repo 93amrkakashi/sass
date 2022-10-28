@@ -29,6 +29,7 @@ ul {
 section {
   position: relative;
   margin-bottom: 70px;
+  overflow: hidden;
 }
 
 .about::after,

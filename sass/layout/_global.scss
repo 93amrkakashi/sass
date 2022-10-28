@@ -10,6 +10,7 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   scroll-behavior: smooth;
   margin: 0;
   box-sizing: border-box;
+  // overflow-x: auto;
 }
 
 a {
@@ -35,6 +36,7 @@ ul {
 section {
   position: relative;
   margin-bottom: 70px;
+  overflow: hidden;
 }
 .about::after,
 .skills::after,
@@ -105,6 +107,7 @@ body {
   // color: red;
   transform: translateX(-2500px);
   transition: all 0.9s;
+  // overflow: hidden;
 }
 .section:nth-of-type(even) {
   transform: translateX(2500px);
