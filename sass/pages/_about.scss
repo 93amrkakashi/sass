@@ -1,0 +1,114 @@
+$main-color: rgb(255, 255, 255);
+$second-color: black;
+$transition: all 0.5s;
+$spicial: #2d67f7;
+$border: 1px solid rgba(184, 184, 184, 0.63);
+$shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+
+.about {
+  min-height: 150vh;
+}
+
+.about .content-sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  min-height: 60vh;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 30px;
+  background-image: url(pics/man\ on\ lap.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.top h2 {
+  color: $spicial  ;
+  letter-spacing: 1px;
+}
+
+.top p {
+  color: black;
+  font-weight: 600;
+}
+
+.top h4 span {
+  color: $spicial  ;
+  font-size: 23px;
+}
+
+.social-work,
+.devlop {
+  line-height: 2;
+  position: relative;
+  width: 55%;
+}
+
+.social-work::before,
+.devlop::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: calc(100% - 18px);
+  background-color: $spicial  ;
+  left: -12px;
+  top: 10px;
+  z-index: 0;
+}
+
+.bottom {
+  min-height: 70vh;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $main-color  ;
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  box-shadow: 2px 2px 7px 0px #666464ab;
+  transition: $transition  ;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card i {
+  font-size: 50px;
+}
+
+.html {
+  color: #e54d26;
+}
+
+.css {
+  color: #0b73ba;
+}
+
+.js {
+  color: #d9b82d;
+}
+
+.card p {
+  width: 95%;
+  text-align: center;
+}
