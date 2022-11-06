@@ -1,0 +1,291 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		title amr muzashi
+		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' referrerpolicy='no-referrer')
+		link(rel='preconnect' href='https://fonts.googleapis.com')
+		link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+		link(href='https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+		link(rel='stylesheet' href='all.min.css')
+		link(rel='stylesheet' href='style.css')
+	body
+		// -------------loader ------------
+		.loader
+			.wrapper
+				.circle
+				.circle
+				.circle
+				.shadow
+				.shadow
+				.shadow
+		// -------------loader ------------
+		// ------ nav bar ---------
+		#nav.navigation
+			a.home(href='#home')
+				h1 Amr Muzashi
+			i#menu.menu.fa-solid.fa-bars
+			.links
+				a(href='#about') about
+				a(href='#skills') skills
+				a(href='#services') services
+				a(href='#projects') projects
+				a(href='#contact') contact
+			a.git(href='https://github.com/93amrkakashi')
+				i.fa-brands.fa-github.icon
+		// ------end of nav bar ---------
+		// ------ home section ---------
+		section#home.hero
+			.content
+				h1 Amr Ali
+				h2 front end devlober
+			button.btn contact me
+		// ------ end of home section ---------
+		// ------ about section ---------
+		section#about.about
+			.main-title
+				h2 about me
+			.content-sec
+				.section.top
+					h2 ok, where do we start?
+					p
+						| Well... we can start with introducing myself
+					h4
+						| my name is 
+						span Amr Ali
+						| , a front end devlober, based in egypt.
+					p
+					p.social-work
+						| the part that might be funny, that in fact I have
+						| a bachelor's degree in social work!
+						| Social work is very good but I did not find my passion in it.
+					p.devlop
+						| There where the development path began.
+						| I started my studies as a front-end developer through
+						| self-education,
+						| through online courses and bootcamps, in addition to
+						| reading in several documents.
+				.section.bottom
+					.card
+						i.fa-brands.fa-html5.html
+						h2 HTML5
+						p
+							| The first thing I started with was HTML. 
+							br
+							|             it didn't take much time to learn the basics, but diving into the language more took some time.
+					.card
+						i.fa-brands.fa-css3-alt.css
+						h2 CSS3
+						p
+							| Then, the CSS, it isn't really that hard. 
+							br
+							|             but it's pretty big, in the end you find that what you can do with it is really great.
+					.card
+						i.fa-brands.fa-square-js.js
+						h2 JavaScript
+						p
+							| Finally the JavaScript, It may be very difficult to learn.
+							| Variables, functions, loops and many other things that seem really hard ,
+							| but in the end it's all worth it
+		// ------ end of about section ---------
+		// ------ skills section ---------
+		section#skills.skills
+			.main-title
+				h2 skills
+			.section.skill-sec
+				.left-sec
+					.pic
+						img(src='pics/langs.png' alt='')
+				.right-sec
+					.skill
+						.name
+							i.fa-brands.fa-html5.html
+							h3 HTML5
+						.progress
+							span.html2(style='width: 0' data-width='95%')
+					.skill
+						.name
+							i.fa-brands.fa-css3-alt.css
+							h3 CSS3
+						.progress
+							span.css2(style='width: 0' data-width='85%')
+					.skill
+						.name
+							i.fa-brands.fa-square-js.js
+							h3 JAVA SCRIPT 
+						.progress
+							span.js2(style='width: 0' data-width='65%')
+					.skill
+						.name
+							i.fa-brands.fa-sass(style='color: #c66394;')
+							h3 SASS
+						.progress
+							span.sass(style='width: 0' data-width='70%')
+			.section.others
+				.card1
+					i.fa-solid.fa-comments
+					h4 Effective communication
+					p  always available 24 hours aday
+				.card1
+					i.fa-solid.fa-lightbulb
+					h4 creativity
+					p  creative and have alot of ideas
+				.card1
+					i.fa-solid.fa-stopwatch
+					h4 time mangment
+					p  know how to manage time well
+				.card1
+					i.fa-sharp.fa-solid.fa-user-secret
+					h4 privacy
+					p  your privacy really matters
+				.card1
+					i.fa-solid.fa-laptop-code
+					h4 clean code
+					p you will have a clean code 
+				.card1
+					i.fa-solid.fa-computer
+					h4 computer skills
+					p I have very good computer skills 
+				.card1
+					i.fa-solid.fa-magnifying-glass
+					h4 searching
+					p  searching is devloper's best friend
+				.card1
+					i.fa-solid.fa-pen-to-square
+					h4 organized
+					p very organized in work & effective
+		// ------ end of skills section ---------
+		// ------ services section ---------
+		section#services.servics
+			.main-title
+				h2 my services
+			.cards
+				.section.s-card.build
+					.pic
+						img(src='pics/build.png' alt='')
+					.text
+						h2 build a website
+						h4
+							| build a creative responsive website 
+							br
+							|             from scratch
+						p
+							| I will Build your own website from scratch to suit your requirements, and the way you want it.
+							| All you have to do is to give me your website design and let me write the code for you.
+				.section.s-card.solve
+					.pic
+						img(src='pics/solve.png' alt='')
+					.text
+						h2 problem solving
+						h4
+							| Solve software problems 
+							br
+							|  that need a developer
+						p
+							| I will solve programming problems that may require logical thinking and the rules of programming languages.
+							| So if you have a problem, all you have to do is leave it to me and I will work on it for you.
+				.section.s-card.fix
+					.pic
+						img(src='pics/home-font.png' alt='')
+					.text
+						h2 fix issues
+						h4
+							| Modify sites, fix problems 
+							br
+							|  and add new features.
+						p
+							| If your website contains some errors, if you want to add some new features, if you want to modify the
+							| entire website.
+							| Well, I'm here for that.
+							| Tell me what changes are required and leave it to me
+			.second
+				.section.rules
+					h3 How it works?
+					h4
+						| In order to provide my services to you,
+						| there are some steps.
+				.steps
+					.section.web
+						ul
+							li
+								| If your request is to create a website, you must send me a design first,
+								| so that I can implement it and write the codes.
+							li do not forget the materials such as the images you want to include, etc.
+							li Meanwhile, we will be in contact to follow up on the progress.
+							li
+								| What if you don't have a design?
+								| Well, don't worry, it's not the end of the world.
+							li We'll start talking about the general look you want your website to look like,
+							li
+								| and maybe I'll ask you for a similar websites so that I know exactly what you want.
+					.section.pro
+						ul
+							li If your request is to solve a problem, okay.
+							li
+								| It is enough for you to explain the problem you want to solve and then give me the code.
+							li  I will tell you if I can solve it and how long it may take to find a solution.
+					.section.add
+						ul
+							li
+								| If your request is to modify your own website, or to include new features in it,
+								| or even to rebuild it from the beginning again,
+							li
+								| you will send me the website files first, and then tell me the required modifications
+								| or the features you want to add.
+					.section.geniral
+						ul
+							li
+								| I will tell you how much time I need to get the job done before i start to do anything.
+							li
+								| We will be in constant contact to let you know about updates at least every day.
+							li If you want to make some adjustments while working, feel free to tell me.
+		// ------ end of services section ---------
+		// contact me sectioin
+		section#contact.contact-me
+			.main-title
+				h2 Contact me 
+			h4 you can contact me through
+			.contacts
+				.card2
+					a(target='_blank' href='https://wa.me/0201029404662')
+						i.fa-brands.fa-square-whatsapp
+					h4 whatsapp
+					p contact with me on whatsapp
+				.card2
+					a(target='_blank' href='https://www.facebook.com/93amr.kakashi/')
+						i.fa-brands.fa-facebook
+					h4 facebook
+					p contact with me on facebook
+				.card2
+					a(target='_blank' href='https://www.linkedin.com/in/amr-ali-mohamed-88192b241/')
+						i.fa-brands.fa-linkedin
+					h4 linked in
+					p contact with me on linked in
+				.card2
+					a(href='mailto:93amr.kakashi@gmail.com')
+						i.fa-brands.fa-square-google-plus
+					h4 gmail
+					p contact with me on gmail
+				.card2
+					a(target='_blank' href='https://www.instagram.com/93amr.kakashi/')
+						i.fa-brands.fa-square-instagram
+					h4 instgram
+					p contact with me on instgram
+				.card2
+					a(target='_blank' href='https://github.com/93amrkakashi')
+						i.fa-brands.fa-github
+					h4 git hub
+					p contact with me on git hub
+			.social
+		// contact me sectioin
+		// ------ footer section ---------
+		footer
+			i.fa-brands.fa-linkedin
+			i.fa-brands.fa-github
+			i.fa-brands.fa-square-instagram
+			i.fa-brands.fa-square-google-plus
+		// ------ end of footer section ---------
+		// ------ link java script file ---------
+		script(src='app.js')
